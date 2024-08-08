@@ -18,7 +18,7 @@ resource "aws_security_group" "roboshop-all" { #this is terraform name, for terr
         from_port        = var.inbound-from-port # 0 means all ports
         to_port          = 0 
         protocol         = "tcp"
-        cidr_blocks      = var.cidr_blocks
+        cidr_blocks      = var.cidr-blocks
         #ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
     }
 
