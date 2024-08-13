@@ -1,7 +1,7 @@
 resource "aws_instance" "web"{
     count = 11  # count.index is a special variable given by terraform
     ami = var.ami_id
-    instance_type = local.instance_type
+    instance_type = local.instance_typo
 
     tags = {
         Name = var.instance_names[count.index]
