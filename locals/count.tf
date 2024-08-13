@@ -15,6 +15,6 @@ resource "aws_route53_record" "www" {
   name    = "${var.instance_names[count.index]}.${var.domain_name}" #interpolation
   type    = "A"
   ttl     = 1
-  records = local.ip
+  records = [local.ip]
 
 }
