@@ -1,9 +1,10 @@
 resource "aws_instance" "web"{
+    count = 11
     ami = var.ami_id
-    instance_type = t2.micro
+    instance_type = "t2.micro"
 
     tags = {
-        Name = "Web"
+        Name = var.instance_names[count.index]
     }
 
 }
