@@ -12,7 +12,7 @@ variable "tags"{
     type = map
     default = {
         Name = "Hello Terraform"
-        Project = "Terraform"
+        Project = "Roboshop"
         ENV = "Dev"
         Component = "Web"
         Terraform = "true"
