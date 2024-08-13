@@ -9,9 +9,11 @@ variable "ami_id" {
 }
 
 variable "zone_id" {
+    type = string
     default = "Z00146592EVUBM8N30O7L"
 }
 
 variable "domain_name" {
-    deafult = "sivadevops.online"
+    type = string
+    default = "sivadevops.online"
 }
