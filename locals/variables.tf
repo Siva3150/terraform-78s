@@ -15,7 +15,7 @@ variable "ami_id" {
 
 variable "zone_id" {
     type = string
-    default = "Z00146592EVUBM8N30O7L"
+    default = "ZZ06930922N9BU7VR1YEID"
 }
 
 variable "domain_name" {
